@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="navb-logo">
-                <img src="IMAGENES/Group 9.png" alt="">
-                <p>LINJA <span>te conecta</span> </p>
+        <nav class="navbar navbar-expand-md fs-3 ms-3 bg-nav">
+            <div class="navbar-brand">
+                <img src="IMAGENES/Group 14.png" alt="" class="logo-navbar">
             </div>
-            <div class="navb-items">
-                <div class="item">
-                    <a href="#empresa">Empresa</a>
-                </div>
-                <div class="item">
-                    <a href="#planes">Planes</a>
-                </div>
-                <div class="item">
-                    <a href="#sedes">Sedes</a>
-                </div>
-                <div class="item">
-                    <a href="#contacto">Contacto</a>
-                </div>
+            <button class="navbar-toggler me3" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collaps navbar-collapse" id="btn">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#empresa" class="nav-link mx-3 fs-6">Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#planes" class="nav-link mx-3 fs-6">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sedes" class="nav-link mx-3 fs-6">Sedes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link mx-3 fs-6">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
