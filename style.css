@@ -189,11 +189,46 @@ h2 {
     box-shadow: 4px 7px 8px 1px rgba(97, 96, 96, 0.5);
 }
 
-.container-fluid{
+.fluid-seccion2{
     padding-left: 0;
     padding-right: 0;
 }
 
 .span4{
     text-shadow: 0px 1px 1px #09C184;
+}
+
+.seccion3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #0A7B5F;
+    color: #F2F2F2;
+    height:fit-content;
+    
+}
+
+.titulo-seccion3{
+    font-size: 40px;
+    padding-right: 65px;
+}
+
+.cont-inst{
+    font-size: 32px;
+    padding-right: 90px;
+}
+
+i{
+    font-size: 150px;
+    color:#0BBF7D ;
+    
+}
+
+.instrucciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
