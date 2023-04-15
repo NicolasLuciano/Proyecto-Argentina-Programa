@@ -5,9 +5,7 @@
 }
 
 body{
-    background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top left, #2c3e50, 30%, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #EFEFEF;
 }
 
 header .nav-item:hover{
@@ -27,6 +25,11 @@ header .nav-item:hover{
 @font-face {
     font-family: red-hat-bold;
     src: url(static/RedHatDisplay-Bold.ttf);
+}
+
+@font-face {
+    font-family: red-hat-black;
+    src: url(static/RedHatDisplay-Black.ttf);
 }
 
 header{
@@ -121,7 +124,7 @@ h1{
     transition: 0.5s;
 }
 
-button:hover {
+.div-contactar button:hover {
     color: #09C184;
     background-color: #0C5149;
     box-shadow: 1px 2px 10px 1px #09C184;
@@ -221,14 +224,189 @@ h2 {
     padding-right: 90px;
 }
 
-i{
+.bi{
     font-size: 150px;
-    color:#0BBF7D ;
-    
+    color:#0BBF7D;
+}
+
+.logo-tienda{
+    font-size: 150px;
+    margin-top: 40px;
 }
 
 .instrucciones{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ul-navbar{
+    padding-right: 30px;
+}
+
+.boton-nav button{
+    border: none;
+}
+
+.fa-solid{
+    color: rgb(173, 172, 172);
+}
+
+.navbar{
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0);
+}
+
+.p-sede{
+    padding-top: 30px;
+}
+
+.seccion4{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #F2F2F2;
+    height:fit-content;
+    flex-direction: column;
+}
+
+.card{
+    margin: 0 auto;
+    font-size: 20px;
+    height: 520px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 7px 25px 1px rgba(11, 42, 83, 0.5);
+}
+
+.card-mejor-oferta{
+    box-shadow: 0 7px 25px 1px #0BBF7D;
+}
+
+h6{
+    color: white;
+    background-color: #0b604b;
+    width: 180px;
+    height: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: red-hat-medium;
+}
+
+ h4{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-family: red-hat-bold;
+    text-shadow: 0px 2px 4px #00000040;
+}
+
+h5{
+    font-family: red-hat-bold;
+    font-size: 24px;
+}
+
+.precios button:hover{
+    background-color: #0b5140;
+    box-shadow: 0 1px 10px 1px rgba(181, 251, 220, 0.5);
+}
+
+.boton-comprar a:hover{
+    color: #36c68a;
+}
+
+.boton-comprar{
+    width: 160px;
+    border-radius: 5px;
+    border: #3C7E63;
+    background-color: #0A7B5F;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 8px 3px;
+    transition: 0.5s;
+}
+
+.boton-comprar a{
+    color: white;
+    font-size: 20px;
+    font-family: red-hat-bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+.titulo-seccion4{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-shadow: none;
+    font-family: red-hat-black;
+    font-size: 42px;
+}
+
+.card-description{
+    margin-top: 12px;
+    margin-left: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 15px;
+}
+
+.card-description p{
+    text-align: start;
+    font-size: 20px;
+    font-family: red-hat-semibold;
+    color: #0D192B;
+}
+
+.final{
+    margin-top: 100px;   
+}
+
+.final p{
+    font-size: 24px;
+    color: #116953;
+    justify-content: center;
+    align-items: center;
+}
+
+.instrucciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-cards{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.row-titulo{
+    margin-top: 100px;
+}
+
+.span-card{
+    margin-left: 25px;
+    color: rgb(158, 157, 157);
+    text-shadow: none;
+}
+
+.precios-c1{
+    margin-top: 30px;
+}
+
+.precios-c2{
+    margin-top: 60px;
 }
