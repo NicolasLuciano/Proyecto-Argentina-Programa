@@ -97,3 +97,14 @@ function genPDF(){
     doc.text(10,130, "Retiras en la sede de: " + insede);
     doc.save('MiPedido.pdf');
 }
+
+//JS DE SECTION 4:
+var botones = document.querySelectorAll(".btn-expandir");
+var textos_expandir = document.querySelectorAll(".texto_expandir");
+ 
+botones.forEach((elemento, clave)=>{
+    elemento.addEventListener("click", () => {
+        textos_expandir[clave].classList.toggle("abrir_cerrar")
+    })
+})
+
