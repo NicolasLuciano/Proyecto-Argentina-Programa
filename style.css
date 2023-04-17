@@ -655,6 +655,15 @@ a{
         background-image: none;
         border-radius: 0;
     }
+    .titulo-seccion3{
+        font-size: 32px;
+    }
+    .bi{
+        font-size: 100px;
+    }
+    .logo-tienda{
+        font-size: 100px;
+    }
 }
 
 .seccion5{
