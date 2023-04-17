@@ -6,6 +6,9 @@
 
 body{
     background: #EFEFEF;
+   position: relative;
+   padding-bottom: 5em;
+   width: 100vw;
 }
 
 header .nav-item:hover{
@@ -479,15 +482,23 @@ a{
     max-height: 500px;
     transition: max-height 0.5s ease-in;
 }
+.seccion-contactar{
+    margin-bottom: 7em;
+}
 
 .contenido-contacto {
-    background-color: rgb(249, 247, 241);
+    background-color: white;
     font-family: 'Red Hat Display', sans-serif;
     padding: 1.5em;
+    width: 100vw;
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 3em;
+    border-radius: 1em;
+    box-shadow: 0 7px 25px 1px rgba(11, 42, 83, 0.5);
 }
+
 .comunicate {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
@@ -552,7 +563,7 @@ a{
 .formulario-contacto button {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
-    color: aliceblue;
+    color: white;
     background: rgb(3, 184, 123);
     border: 0;
     text-transform: uppercase;
@@ -939,4 +950,64 @@ justify-content: center;
 
 .seccion-contactar{
     margin-top: 100px;
+}
+.footer{
+    font-family: red-hat-bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.icons{
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: #f4f4f4;
+}
+
+.company-name{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+  
+
+.logo-tam{
+    float: left;
+    width: 355px;
+    height: 100px;
+}
+
+.iconos-footer{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+   gap: 2em;
+}
+
+
+.redes{
+    font-size:medium;
+    text-align: center;
+    margin-top: 10px;
+    gap: 3em;
+}
+
+.rights{
+    font-size:medium;
+    float:right;
+    text-align: center;
+    margin-top: 28px;
 }
