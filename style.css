@@ -607,7 +607,7 @@ a{
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .comunicate {
         text-align: center;
     }
@@ -615,7 +615,7 @@ a{
         font-size: 36px;
     }
     .p-principal{
-        font-size: 20px;
+        font-size: 24px;
     }
     .boton-contactar{
         margin-top: 50px;
@@ -623,9 +623,11 @@ a{
         font-size: 18px;
     }
     .section-principal{
-        background-size: 100vh 100vh;
-        height: none;
-        border-radius: 60px;
+        border-radius: 50px;
+        background-size: 100vw;
+        margin: auto;
+        background-image: none;
+        background-color: #e4ddddbe;
     }
     .columna-2-principal{
         flex: none;
@@ -643,7 +645,7 @@ a{
         margin-bottom: 70px;
     }
     .p-seccion2{
-        font-size: 20px;
+        font-size: 24px;
         width: 450px;
         margin-bottom: 100px;
     }
@@ -657,6 +659,7 @@ a{
     }
     .titulo-seccion3{
         font-size: 32px;
+        padding: 0;
     }
     .bi{
         font-size: 100px;
@@ -664,14 +667,43 @@ a{
     .logo-tienda{
         font-size: 100px;
     }
+    .guion{
+        flex: none;
+    }
+    .titulo-seccion4{
+        font-size: 36px;
+    }
+    .seccion3{
+        height: 900px;
+    }
+    .cont-inst{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .cards-container{
+        display: block;
+    }
+    .card{
+        margin-bottom: 100px;
+    }
+    .seccion5{
+        height: 1300px;
+    }
+    .col-sede{
+        margin-bottom: 40px;
+    }
+    .row-sedes{
+        display: block;
+    }
 }
 
 .seccion5{
-    margin-top: 120px;
-    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 120px;
+    height: 700px;
     text-align: center;
     background-color: white;
     border-radius: 30px;
