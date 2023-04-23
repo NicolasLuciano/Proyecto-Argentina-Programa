@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+  <header>
         <nav class="navbar navbar-expand-md fs-3 ms-3 bg-nav">
             <div class="navbar-brand">
                 <img src="IMAGENES/Group 14.png" alt="" class="logo-navbar">
@@ -31,7 +31,7 @@
                         <a href="#planes" class="nav-link mx-3 fs-6">Planes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#sedes" class="nav-link mx-3 fs-6">Sedes</a>
+                        <a href="#sedesa" class="nav-link mx-3 fs-6">Sedes</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contacto" class="nav-link mx-3 fs-6">Contacto</a>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </nav>
-    </header>
+  </header>
     <section class="section-principal">
         <div class="container container-img">
             <div class="row">
@@ -79,7 +79,7 @@
     </section>
 
     <section class="container-fluid seccion3">
-        <div class="row">
+        <div class="row row-instrucciones">
             <div class="col-sm">
                <h1 class="titulo-seccion3">Cómo conectarse a LINJA</h1>
             </div>
@@ -87,14 +87,14 @@
                 <div class="row instrucciones">
                     <div class="col-sm">
                        <i class="bi bi-phone"></i>
-                       <p>Elegí tu plan</p>
+                       <p class="p-seccion3">Elegí tu plan</p>
                     </div>
                     <div class="col-sm guion">
                        <p>__________________</p>
                     </div>
                     <div class="col-sm">
                        <i class="bi bi-person"></i>
-                       <p>Completa tus datos</p>
+                       <p class="p-seccion3">Completa tus datos</p>
                     </div>
                     <div class="col-sm guion">
                        <p>__________________</p>
@@ -170,8 +170,8 @@
     </section>
 
     <div class="container-fluid seccion5" id="sedesa">
-        <div  class="row">
-            <div class="col-sm">
+        <div  class="row row-sedes">
+            <div class="col-sm col-titulo5">
               <h1 class="titulo-seccion-sedes"><i class="bi bi-shop-window logo-seccion-sedes"></i>NUESTRAS SEDES</h1>
              <div id="linea"></div>
             </div>
@@ -196,7 +196,8 @@
             </div>
         </div>
      </div>
- </div>
+    </div>
+  </div>
 
     <section class="seccion7" id="seccion-pedido">
         <div class="container">
@@ -211,52 +212,68 @@
           
           <form action="" id="form" name="formulario">
           <div class="row columnas-pedido">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-plan">
               <h3>ELEGI TU PLAN</h3>
-              <div class="input-plan">
-                <input type="radio" name="boton" value="Linja Fast" id="fast" class="choice-plan">
-                <label for="fast" class="label-plan">Linja Fast</label>
+                <div class="input-plan">
+                  <input type="radio" name="boton" value="Linja Fast" id="fast" class="choice-plan">
+                  <label for="fast" class="label-plan">Linja Fast</label>
+                </div>
+                <div class="input-plan">
+                  <input type="radio" name="boton" value="Linja Pro" id="pro" class="choice-plan">
+                  <label for="pro" class="label-plan">Linja Pro</label>
+                </div>
+                <div class="input-plan">
+                  <input type="radio" name="boton" value="Super Linja" id="super" class="choice-plan">
+                  <label for="super" class="label-plan">Super Linja</label>
+                </div>
+                <p class="warnings0" id="warnings0"></p>
               </div>
-              <div class="input-plan">
-                <input type="radio" name="boton" value="Linja Pro" id="pro" class="choice-plan">
-                <label for="pro" class="label-plan">Linja Pro</label>
-              </div>
-              <div class="input-plan">
-                <input type="radio" name="boton" value="Super Linja" id="super" class="choice-plan">
-                <label for="super" class="label-plan">Super Linja</label>
-              </div>
-              <p class="warnings0" id="warnings0"></p>
-            </div>
             
               <div class="col div-flecha">
                 <i class="fa-solid fa-arrow-right"></i>
               </div>
       
-              <div class="col-lg-5">
+              <div class="col-lg-5 columna-inputs">
                 <div class="titulo-form">
                   <h3>COMPLETA TUS DATOS</h3>
                 </div>
-                <div class="nombre-apellido">
-                  <i class="fa-solid fa-user logo-nom"></i>
-                  <input type="text" id="nombreCliente" placeholder="Nombre" class="input-form">
-                  <i class="fa-regular fa-user logo-ap"></i>
-                  <input type="text" id="apellidoCliente" placeholder="Apellido" class="input-form">>
-                </div>
-                <div class="tel-email">
-                  <i class="fa-solid fa-user-group logo-edad"></i>
-                  <input type="date" id="edad" placeholder="Edad" class="input-form">>
-                  <i class="fa-solid fa-address-card logo-dni"></i>
-                  <input type="number" id="dni" placeholder="DNI" class="input-form">>
-                </div>
-                <div class="tel-email">
-                  <i class="fa-solid fa-phone logo-tel"></i>
-                  <input type="tel" id="telefono" placeholder="Telefono" class="input-form">>
-                  <i class="fa-solid fa-envelope logo-mail"></i>
-                  <input type="email" id="email" placeholder="Email" class="input-form">>
-                </div>
-                <div class="tel-email">
-                  <i class="fa-solid fa-message"></i>
-                  <textarea name="texto" rows="1" cols="48" placeholder="Escriba su comentario" id="comentario" class="mensaje-form"></textarea>
+                <div class="div-todos-input">
+                  <div class="nombre-apellido">
+                    <div class="logo-con-input">
+                      <i class="fa-solid fa-user logo-nom"></i>
+                      <input type="text" id="nombreCliente" placeholder="Nombre" class="input-form">
+                    </div>
+                    <div class="logo-con-input">
+                      <i class="fa-regular fa-user logo-ap"></i>
+                      <input type="text" id="apellidoCliente" placeholder="Apellido" class="input-form">>
+                    </div>
+                  </div>
+                  <div class="tel-email">
+                    <div class="logo-con-input">
+                      <i class="fa-solid fa-user-group logo-edad"></i>
+                      <input type="date" id="edad" class="input-edad">>
+                    </div>
+                    <div class="logo-con-input">
+                      <i class="fa-solid fa-address-card logo-dni"></i>
+                      <input type="number" id="dni" placeholder="DNI" class="input-form">>
+                    </div>
+                  </div>
+                  <div class="tel-email">
+                    <div class="logo-con-input">
+                      <i class="fa-solid fa-phone logo-tel"></i>
+                      <input type="tel" id="telefono" placeholder="Telefono" class="input-form">>
+                    </div>
+                    <div class="logo-con-input">
+                      <i class="fa-solid fa-envelope logo-mail"></i>
+                      <input type="email" id="email" placeholder="Email" class="input-form">>
+                    </div>
+                  </div>
+                  <div class="tel-email">
+                    <div class="logo-con-input">
+                      <i class="fa-solid fa-message"></i>
+                      <textarea name="texto" rows="1" cols="48" placeholder="Escriba su comentario" id="comentario" class="mensaje-form"></textarea>
+                    </div>
+                  </div>
                 </div>
               </div>
                 
@@ -309,19 +326,19 @@
                 <div class="content-collapse">
                     <section>
                         <button class="btn-expandir">¿Qué promociones y ofertas tiene la empresa?</button>
-                        <p class="texto_expandir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, excepturi. Odit aspernatur dolore, necessitatibus modi placeat cupiditate deserunt! Sunt error qui dolore quo dicta vero consectetur praesentium quasi iusto fugit?</p>
+                        <p class="texto_expandir">En nuestras promociones entran los tres planes disponibles: Linja Fast, Linja Pro, y Super Linja. ¡El plan Linja Pro esta en una mega oferta, no te la pierdas!</p>
                     </section>
                     <section>
                         <button class="btn-expandir">¿Cuánto demora el trámite?</button>
-                        <p class="texto_expandir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, excepturi. Odit aspernatur dolore, necessitatibus modi placeat cupiditate deserunt! Sunt error qui dolore quo dicta vero consectetur praesentium quasi iusto fugit?</p>
+                        <p class="texto_expandir">Una vez hecho tu pedido con tus datos enviados, podes pasar a buscar tu chip dentro de 5 dias en la sede elegida.</p>
                     </section>
                     <section>
                         <button class="btn-expandir">¿Cuáles son las formas de pago disponibles?</button>
-                        <p class="texto_expandir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, excepturi. Odit aspernatur dolore, necessitatibus modi placeat cupiditate deserunt! Sunt error qui dolore quo dicta vero consectetur praesentium quasi iusto fugit?</p>
+                        <p class="texto_expandir">Las formas de pago que ofrecemos son unicamente de manera presencial en la sede elegida una vez hecho tu pedido. Entre ellos estan: Mercado pago, Transferencia bancaria, Tarjetas de credito/debito y Efectivo.</p>
                     </section>
                     <section>
                         <button class="btn-expandir">¿Cómo puedo hacer un reclamo?</button>
-                        <p class="texto_expandir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, excepturi. Odit aspernatur dolore, necessitatibus modi placeat cupiditate deserunt! Sunt error qui dolore quo dicta vero consectetur praesentium quasi iusto fugit?</p>
+                        <p class="texto_expandir">Tu reclamo puede ser hecho mediante el formulario de contacto indicando tu numero de pedido, o bien podes acercarte a la sucursal donde retiraste el chip y te vamos a asesorar de la mejor manera posible.</p>
                     </section>
                 </div>
             </div>
@@ -394,21 +411,25 @@
           <img src="IMAGENES/Group 14.png" class="logo-tam">
       </div>
       <div class="icons">
+        <div class="div-iconos-f">
           <div class="iconos-footer">
-              <img src="imagenes/twitter.png" alt="" ><p class="redes">&nbsp;&nbsp;@LINJA_ar</p>
+              <img src="imagenes/twitter.png" alt="" class="img-twitter" ><p class="redes">&nbsp;&nbsp;@LINJA_ar</p>
           </div>
 
           <div class="iconos-footer">
-              <img src="imagenes/insta.png" alt="" ><p class="redes">&nbsp;&nbsp;@LINJA_ar</p>
+              <img src="imagenes/insta.png" alt="" class="img-twitter" ><p class="redes">&nbsp;&nbsp;@LINJA_ar</p>
           </div>
+        </div>
 
+        <div class="div-iconos-f">
           <div class="iconos-footer">
-              <img src="imagenes/wpp.png" alt="" ><p class="redes">&nbsp;&nbsp;+3484632062</p>
+              <img src="imagenes/wpp.png" alt="" class="img-twitter" ><p class="redes">&nbsp;&nbsp;+3484632062</p>
           </div>
           
           <div class="iconos-footer">
-              <img src="imagenes/Facebook.png" alt="" ><p class="redes">&nbsp;&nbsp;@LINJA_ar</p>
+              <img src="imagenes/Facebook.png" alt="" class="img-twitter" ><p class="redes">&nbsp;&nbsp;@LINJA_ar</p>
           </div>
+        </div>
          
 
           <p class="rights">

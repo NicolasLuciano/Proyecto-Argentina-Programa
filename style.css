@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    border: 1px solid red;
 }
 
 body{
@@ -176,9 +177,9 @@ h1{
 }
 
 .p-seccion2{
-    width: 600px;
     font-size: 24px;
     font-family: red-hat-medium;
+    width: 700px;
 }
 
 .texto button:hover{
@@ -589,6 +590,177 @@ a{
 .info-contacto ul li {
     padding: .3em;
 }
+
+.seccion5{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    height: 700px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0;
+}
+
+.seccion7{
+    background-color: white;
+    margin-top: 100px;
+    height: 900px;
+}
+
+.warnings0{
+    text-align: start;
+    margin: auto;
+    color: #e6462a;
+    padding-top: 20px;
+}
+
+h3{
+    font-size: 25px;
+    color: #0b604b;
+}
+
+.choice-plan{
+    appearance: none;
+    width: 0.2rem;
+    height: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #0C5149;
+    border-radius: 30px;
+}
+
+.label-plan{
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.warnings1{
+    text-align: start;
+    margin: auto;
+    color: #e6462a;
+    padding-top: 20px;
+}
+
+.nombre-apellido{
+    display: flex;
+    margin-top: 25px;
+}
+
+.logo-con-input{
+    display: flex;
+}
+
+.tel-email{
+    display: flex;
+    margin-top: 40px;
+}
+
+.logo-ap, .logo-mail{
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.logo-mail{
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.logo-dni{
+    margin-left: 44px;
+    margin-right: 11px;
+}
+
+.logo-nom, .logo-tel{
+    margin-right: 15px;
+}
+
+.logo-edad{
+    margin-right: 7px;
+}
+
+.input-form{
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    outline: none;
+}
+
+.input-edad{
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    outline: none;
+}
+
+.content-select{
+	max-width: 250px;
+	position: relative;
+    margin-top: 30px;
+}
+
+.logo-tam{
+    float: left;
+    width: 355px;
+    height: 100px;
+}
+
+.logo-seccion-sedes,.logo-ituzaingo, .logo-laplata, .logo-caballito{
+    position: relative;
+    left: -15px;
+     font-size: 50px;
+     color: #0AA66D;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .col-titulo5{
+    margin-top: 100px;
+    height: 100px;
+}
+
+#linea{
+    border: 1px solid black;
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+    transform: translate(-50px -50px);
+}
+
+.a-contacto{
+    text-decoration: none;
+    color: #0C5149;
+    font-family: red-hat-bold;
+}
+
+.seccion-contactar{
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 7em;
+}
+
+.footer{
+    font-family: red-hat-bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.info-contacto {
+    padding: 3em;
+}
+
+.sedes-container{
+    margin-top: 50px;
+ }
+
+ .ms-3{
+    margin-left: 1rem!important;
+ }
 @media (min-width: 700px){
     .contenedor-form {
         display: grid; 
@@ -604,6 +776,219 @@ a{
     }
     .comunicate {
         margin-left: 3em;
+    }
+}
+@media (min-width: 991px) and (max-width: 1500px){
+    .columna-2-principal{
+        flex: none;
+    }
+    header{
+        width: 100vw;
+    }
+    .logo-navbar{
+        width: 250px;
+        height: auto;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+    .ms-3{
+        margin-left: 0rem!important;
+     }
+     .section-principal{
+        border-radius: 50px;
+        background-size: 100vw 60vh;
+        margin: auto;
+        height: 626px;
+    }
+    .p-principal{
+        color: rgb(0, 0, 0);
+        background-color: #fffafa44;
+        width: 80vw;
+        border-radius: 10px;
+    }
+    #pantalla-dividida{
+            background-color: #ffffff;
+            background-image: none;
+            border-radius: 0;
+    }
+    .columna1-seccion2{
+        width: 0;
+        flex: none;
+    }
+    .row-seccion2{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    .row>*{
+        padding-right: 0;
+    }
+    .seccion3{
+        width: 100vw;
+    }
+    .instrucciones{
+        width: 100vw;
+    }
+    .guion{
+        padding: 0;
+    }
+    .col-sm{
+        padding: 0;
+    }
+    .seccion5{
+        width: 100vw;
+    }
+    .row-sedes{
+        width: 100vw;
+    }
+    h3{
+        font-size: 22px;
+    }
+    .div-todos-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .nombre-apellido, .tel-email{
+        flex-direction: column;
+    }
+    .logo-ap, .logo-dni, .logo-mail{
+        margin-left: 0;
+    }
+    .seccion7{
+        height: 1096px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        bottom: auto;
+    }
+    .div-iconos-f{
+        display: flex;
+        justify-content: space-around;
+    }
+    .icons{
+        flex-direction: column;
+    }
+    .boton-contactar{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+    header{
+        width: 100vw;
+    }
+    .logo-navbar{
+        width: 250px;
+        height: auto;
+    }
+    .navbar-brand{
+        margin-right: 0;
+    }
+    .ms-3{
+        margin-left: 0rem!important;
+     }
+     .section-principal{
+        border-radius: 50px;
+        background-size: 100vw;
+        margin: auto;
+        background-image: none;
+        background-color: #e4ddddbe;
+    }
+    .columna-2-principal{
+        flex: none;
+    }
+    .columna1-seccion2{
+        width: 0;
+        flex: none;
+    }
+    .fluid-seccion2{
+        display: flex;
+        justify-content: center;
+    }
+    .row-seccion2{
+        display: flex;
+        justify-content: center;
+    }
+    #pantalla-dividida{
+        background-color: #ffffff;
+        background-image: none;
+        border-radius: 0;
+    }
+    .texto{
+        background-color: transparent;
+    }
+    .instrucciones{
+        display: block;
+    }
+    .row-cards{
+        margin-top: 90px;
+        flex-direction: column;
+    }
+    .card{
+        margin-bottom: 90px;
+    }
+    .row-sedes{
+        display: block;
+    }
+    .seccion5{
+        height: 1410px;
+    }
+    .col-sede{
+        margin-bottom: 50px;
+    }
+    .col-plan{
+        padding: 0;
+    }
+    .input-plan{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        font-size: 28px;
+        text-align: center;
+        text-shadow: 3px 3px 4px rgb(138, 137, 137);
+        text-decoration: double;
+    }
+    .seccion7{
+        height: 1750px;
+    }
+    .div-flecha{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .fa-arrow-right{
+        transform: rotate(90deg);
+    }
+    .warnings0, .warnings1{
+        text-align: center;
+    }
+    .nombre-apellido, .tel-email{
+        justify-content: center;
+    }
+    .input-edad{
+        padding-right: 36px;
+    }
+    .content-select{
+        max-width: none;
+    }
+    .content-collapse{
+        width: 850px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        bottom: auto;
+    }
+    .div-iconos-f{
+        display: flex;
+        justify-content: space-around;
+    }
+    .icons{
+        flex-direction: column;
     }
 }
 
@@ -639,6 +1024,7 @@ a{
     .row-seccion2{
         display: flex;
         justify-content: center;
+        width: 100vw;
     }
     .titulo-seccion2{
         font-size: 30px;
@@ -647,10 +1033,11 @@ a{
     .p-seccion2{
         font-size: 24px;
         width: 450px;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
     .texto{
         justify-content: center;
+        background-color: transparent;
     }
     #pantalla-dividida{
         background-color: #ffffff;
@@ -660,6 +1047,12 @@ a{
     .titulo-seccion3{
         font-size: 32px;
         padding: 0;
+    }
+    .instrucciones{
+        width: 100vw;
+    }
+    .row-instrucciones{
+        width: 100vw;
     }
     .bi{
         font-size: 100px;
@@ -688,7 +1081,7 @@ a{
         margin-bottom: 100px;
     }
     .seccion5{
-        height: 1300px;
+        height: 1550px;
     }
     .col-sede{
         margin-bottom: 40px;
@@ -696,22 +1089,429 @@ a{
     .row-sedes{
         display: block;
     }
+    .seccion7{
+        height: 1958px;
+    }
+    h3{
+        font-size: 28px;
+        text-align: center;
+        text-shadow: 3px 3px 4px rgb(138, 137, 137);
+        text-decoration: double;
+    }
+    .input-plan{
+        display: flex;
+        justify-content: center;
+    }
+    .warnings0{
+        text-align: center;
+    }
+    .fa-arrow-right{
+        transform: rotate(90deg);
+    }
+    .div-flecha{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .choice-plan{
+    width: 0.4rem;
+    height: 0.7rem;
+    padding: 0.7rem;
+    }
+    .label-plan{
+        font-size: 27px;
+    }
+    .warnings1{
+        text-align: center;
+    }
+    .nombre-apellido, .tel-email{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .logo-con-input{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .logo-ap, .logo-dni, .logo-mail{
+        margin-left: 0px;
+    }
+    .div-todos-input{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .columna-inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-edad{
+        padding-right: 67px;
+    }
+    .content-select{
+        max-width: none;
+    }
+    .div-pdf{
+        margin-top: 20px;
+    }
+    .preguntasSection{
+        display: block;
+    }
+    .titulo-seccion5{
+        font-size: 38px;
+        color: white;
+        text-shadow: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        bottom: auto;
+    }
+    .div-iconos-f{
+        display: flex;
+        justify-content: space-around;
+    }
+    .icons{
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 341px) and (max-width: 444px){
+    body{
+        width: 100vw;
+    }
+    .logo-navbar{
+        width: 90vw;
+        height: auto;
+    }
+    .div-principal{
+        margin-top: 37px;
+    }
+    .div-p1{
+        margin-top: 34px;
+    }
+    .p-principal{
+        font-size: 20px;
+    }
+    .section-principal{
+        height: 611px;
+    }
+    .titulo-seccion2{
+        font-size: 26px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .p-seccion2{
+        font-size: 20px;
+        width: 90vw;
+        margin-bottom: 40px;
+    }
+    #pantalla-dividida{
+        width: 100vw;
+    }
+    .columna1-seccion2{
+        width: 100%;
+    }
+    .boton-contratar{
+        padding: 5px 64px;
+    }
+    .col-8{
+        width: 100%;
+    }
+    .texto{
+        background-color: transparent;
+    }
+    .titulo-seccion3{
+        font-size: 28px;
+    }
+    .logo-tienda{
+        margin-top: 0;
+    }
+    .row{
+        margin-right: auto;
+    }
+    .p-seccion3{
+        font-size: 25px;
+    }
+    .p-sede{
+        font-size: 25px;
+    }
+    .row-titulo{
+        margin-top: 60px;
+    }
+    .row-cards{
+        margin-top: 55px;
+        margin-right: 0;
+    }
+    .col-titulo5{
+        margin-top: 33px;
+        width: 100vw;
+    }
+    .logo-seccion-sedes{
+        font-size: 50px;
+    }
+    .titulo-seccion-sedes{
+        width: 100vw;
+        margin: 0;
+    }
+    #linea{
+        width: 100vw;
+    }
+    .sedes-container{
+        margin-top: -5px;
+    }
+    .seccion7{
+        height: 1997px;
+        margin-bottom: 50px;
+    }
+    .logo-ituzaingo, .logo-laplata, .logo-caballito{
+        font-size: 50px;
+    }
+    .seccion5{
+        height: 1350px;
+    }
+    .preguntasSection{
+        height: 90vh;
+    }
+    .titulo-seccion5{
+        font-size: 32px;
+    }
+    .logo-formulario{
+        font-size: 32px;
+    }
+    .col-sede{
+        padding-right: 0;
+    }
+    .div-iconos-f{
+        flex-direction: column;
+    }
+    .img-twitter{
+        width: 100%;
+        height: 100%;
+        margin-left: 180px;
+    }
+}
+@media (min-width: 0px) and (max-width: 340px){
+    body{
+        width: 100vw;
+    }
+    header{
+        width: auto;
+    }
+    .p-seccion2{
+        width: auto;
+        font-size: 16px;
+        margin-bottom: 46px;
+    }
+    .logo-navbar{
+        width: 65vw;
+        height: auto;
+    }
+    .section-principal{
+        height: 543px;
+    }
+    .div-principal{
+        margin-top: 34px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .div-p1{
+        margin-top: 53px;
+    }
+    .p-principal{
+        font-size: 16px;
+    }
+    .titulo-seccion2{
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    .boton-contratar{
+        padding: 2px 34px;
+    }
+    .a-contratanos{
+        font-size: 18px;
+    }
+    .logo-tam{
+        width: 100vw;
+        height: auto;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        bottom: auto;
+    }
+    .icons{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-twitter{
+        width: 100%;
+        height: 100%;
+        margin-left: 180px;
+    }
+    .div-iconos-f{
+        width: auto;
+        display: block;
+    }
+    .col-8{
+        width: 100%;
+    }
+    .texto{
+        height: 540px;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    #pantalla-dividida{
+        height: 73vh;
+    }
+    .row-cards{
+        margin-top: 85px;
+    }
+    .row-titulo{
+        margin-top: 55px;
+    }
+    .logo-formulario{
+        font-size: 2rem;
+    }
+    .titulo-seccion-sedes{
+        width: 95vw;
+        font-size: 24px;
+    }
+    .logo-seccion-sedes{
+        left: 73px;
+        font-size: 50px;
+        left: 0px;
+        margin-right: 10px;
+        }
+    .col-titulo5{
+        width: 100vw;
+    }
+    #linea{
+        width: 200px;
+    }
+    .boton-contactar{
+        padding: 7px 27px;
+    }
+    .a-contacto{
+        font-size: 18px;
+    }
+    .col-8{
+        padding-right: 0;
+        width: 100vw;
+    }
+    .row-seccion2{
+        width: 100vw;
+    }
+    .titulo-seccion3{
+        font-size: 25px;
+    }
+    .row{
+        width: 100vw;
+    }
+    .p-seccion3{
+        font-size: 25px;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .p-sede{
+        font-size: 25px;
+    }
+    .titulo-seccion4{
+        font-size: 27px;
+    }
+    .card{
+        width: 90vw;
+        height: 510px;
+        display: flex;
+        align-items: center;
+    }
+    .plan-linja{
+        font-size: 20px;
+    }
+    .card-description{
+        margin-left: 0;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+    }
+    .card-description p{
+        font-size: 17px;
+        text-align: center;
+    }
+    .precios-c2{
+        margin-top: 32px;
+    }
+    .logo-ituzaingo, .logo-laplata, .logo-caballito{
+        font-size: 30px;
+    }
+    iframe{
+        width: 85vw;
+    }
+    .final p{
+        font-size: 20px;
+    }
+    .seccion-contactar{
+        padding-top: 0;
+        margin-top: 50px;
+    }
+    .logo-formulario{
+        font-size: 1.5rem;
+    }
+    .comunicate{
+        font-size: 1.3rem;
+    }
+    .formulario-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-contacto ul{
+        font-size: 18px;
+        width: 100%;
+    }
+    .btn-expandir{
+        font-size: 19px;
+    }
+    .texto_expandir{
+        font-size: 17px;
+    }
+    .preguntasSection{
+        background-color: transparent;
+        height: 178vh;
+    }
+    .preguntasFrecuentes{
+        background-color: #0A7B5F;
+        padding-bottom: 0;
+    }
+    .titulo-seccion5{
+        font-size: 32px;
+    }
+    .info-contacto{
+        padding: 0;
+    }
+    .div-titulo-pedido{
+        padding: 0;
+    }
+    .col-plan{
+        padding: 0;
+    }
+    .div-todos-input{
+        width: 100vw;
+    }
+    .seccion7{
+        height: 2015px;
+    }
 }
 
-.seccion5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
-    height: 700px;
-    text-align: center;
-    background-color: white;
-    border-radius: 30px;
-    padding: 0;
-}
 
 .titulo-seccion-sedes{
-    margin-top: 50px;
     font-family: red-hat-medium;
     display: flex;
     color: #0D192B;
@@ -723,40 +1523,10 @@ a{
     font-family: red-hat-semibold;
 }
 
-.logo-seccion-sedes,.logo-ituzaingo, .logo-laplata, .logo-caballito{
-    position: relative;
-    left: -15px;
-     font-size: 50px;
-     color: #0AA66D;
-     justify-content: center;
-     align-items: center;
- }
-
- .sedes-container{
-    margin-top: 50px;
- }
 
  .numero-sedes{
     margin-top: 10px;
  }
-
-#linea{
-    border: 1px solid black;
-    width: 450px;
-    position: relative;
-    margin: 0 auto;
-    transform: translate(-50px -50px);
-}
-
-.seccion7{
-    background-color: white;
-    margin-top: 100px;
-    height: 900px;
-}
-
-.info-contacto {
-    padding: 3em;
-}
 
 .logo-carrito, .fa-arrow-right{
     font-size: 50px;
@@ -774,28 +1544,10 @@ a{
     padding-top: 5px;
 }
 
-h3{
-    font-size: 25px;
-}
-
-.choice-plan{
-    appearance: none;
-    width: 0.2rem;
-    height: 0.5rem;
-    padding: 0.5rem;
-    border: 1px solid #0C5149;
-    border-radius: 30px;
-}
-
 .choice-plan:checked{
     background-image: radial-gradient(#09C184 0, #09C184 60%, transparent 60%, transparent);
     color: #09C184;
     border:2px solid #0C5149;
-}
-
-.label-plan{
-    margin-left: 10px;
-    font-size: 24px;
 }
 
 .input-plan{
@@ -813,16 +1565,6 @@ display: flex;
 justify-content: center;
 }
 
-.nombre-apellido{
-    display: flex;
-    margin-top: 25px;
-}
-
-.tel-email{
-    display: flex;
-    margin-top: 40px;
-}
-
 .div-flecha{
     display: flex;
     align-items: center;
@@ -831,37 +1573,6 @@ justify-content: center;
 .logo-nom, .logo-ap, .logo-tel, .logo-mail, .fa-message, .logo-dni, .logo-edad{
     font-size: 30px;
     color: #408472;
-}
-
-.logo-ap, .logo-mail{
-    margin-left: 25px;
-    margin-right: 15px;
-}
-
-.logo-mail{
-    margin-left: 10px;
-    margin-right: 12px;
-}
-
-.logo-dni{
-    margin-left: 44px;
-    margin-right: 11px;
-}
-
-.logo-nom, .logo-tel{
-    margin-right: 15px;
-}
-
-.logo-edad{
-    margin-right: 7px;
-}
-
-
-.input-form{
-    border-top: 2px;
-    border-left: 2px;
-    border-right: 2px;
-    outline: none;
 }
 
 .mensaje-form{
@@ -906,12 +1617,6 @@ justify-content: center;
 
 .content-select select::-ms-expand {
     display: none;
-}
-
-.content-select{
-	max-width: 250px;
-	position: relative;
-    margin-top: 30px;
 }
  
 .content-select select{
@@ -1000,20 +1705,6 @@ justify-content: center;
     padding-top: 20px;
 }
 
-.warnings0{
-    text-align: start;
-    margin: auto;
-    color: #e6462a;
-    padding-top: 20px;
-}
-
-.warnings1{
-    text-align: start;
-    margin: auto;
-    color: #e6462a;
-    padding-top: 20px;
-}
-
 .div-pdf{
     display: flex;
     justify-content: end;
@@ -1030,22 +1721,6 @@ justify-content: center;
 .div-pdf a:hover{
     background-color: #408472;
     transition: 0.5s ease;
-}
-
-.seccion-contactar{
-    margin-top: 100px;
-    padding-top: 100px;
-    margin-bottom: 7em;
-}
-.footer{
-    font-family: red-hat-bold;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #111;
-    text-align: center;
-    color: #f4f4f4;
 }
 
 .icons{
@@ -1066,12 +1741,6 @@ justify-content: center;
     margin-top: 0.5rem;
 }
   
-
-.logo-tam{
-    float: left;
-    width: 355px;
-    height: 100px;
-}
 
 .iconos-footer{
     width: 40px;
@@ -1107,12 +1776,6 @@ justify-content: center;
     font-size: 50px;
     color: #0D192B;
     margin-right: 15px;
-}
-
-.a-contacto{
-    text-decoration: none;
-    color: #0C5149;
-    font-family: red-hat-bold;
 }
 
 .div-contactar a:hover{
