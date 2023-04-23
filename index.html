@@ -352,36 +352,41 @@
             <h4 class="comunicate">¡Comunicate con nosotros!</h4>
             <div class="contenedor-form">
              
-              <div class="formulario-contacto">
-                   <p>
-                    <i class="fa-solid fa-user"  style="color:rgb(4, 90, 61)"> </i>
-                       <label for="fullname">Nombre Completo</label>
-                      <input type="text" name="fullname" id="fullname" >
-                   </p>
-                   <p>
-                    <i class="fa-solid fa-envelope"  style="color:rgb(4, 90, 61)"></i>
-                      <label for="Email">Email</label>
-                      <input type="email" name="email" id="email">
-                   </p>
-                   <p>
-                    <i class="fa-solid fa-phone"  style="color:rgb(4, 90, 61)"></i>
-                      <label for="phone">Número de teléfono</label>
-                      <input type="tel"  name="phone">
-                   </p>
-                   <p>
-                    <i class="fa-solid fa-city"  style="color:rgb(4, 90, 61)"></i>
-                      <label for="affair">Localidad</label>
-                      <input type="text" name="affair">
-                   </p>
-                   <p class="block">
-                    <i class="fa-solid fa-pen"  style="color:rgb(4, 90, 61)"></i>
-                      <label for="message">Mensaje</label>
-                      <textarea name="message" id="message" rows="3"></textarea>
-                   </p>
-                   <p class="block">
-                      <button type="submit">Enviar</button>
-                   </p>
-              </div>
+              <form id="miFormulario">
+                <div class="formulario-contacto">
+                  <p>
+                   <i class="fa-solid fa-user"  style="color:rgb(4, 90, 61)"> </i>
+                      <label for="nombre">Nombre Completo</label>
+                      <input type="text" name="fullname" id="fullname">
+                  </p>
+                  <p>
+                   <i class="fa-solid fa-envelope"  style="color:rgb(4, 90, 61)"></i>
+                     <label for="email">Email</label>
+                     <input type="email" name="email" id="email">
+                  </p>
+                  <p>
+                   <i class="fa-solid fa-phone"  style="color:rgb(4, 90, 61)"></i>
+                     <label for="tel">Número de teléfono</label>
+                     <input type="tel"  name="tel" id="tel">
+                  </p>
+                  <p>
+                   <i class="fa-solid fa-city"  style="color:rgb(4, 90, 61)"></i>
+                     <label for="localidad">Localidad</label>
+                     <input type="text" name="localidad" id="localidad">
+                  </p>
+                  <p class="block">
+                   <i class="fa-solid fa-pen"  style="color:rgb(4, 90, 61)"></i>
+                     <label for="message">Mensaje</label>
+                     <textarea name="message" id="message" rows="3"></textarea>
+                  </p>
+                  <p class="block">
+                     <button type="button" onclick="enviarFormulario()">Enviar</button>
+                  </p>
+             </div>
+             <div id="resultado"></div>
+              </form>
+              
+
               <div class="info-contacto">
                  <h2>Más información</h2>
                  <ul>

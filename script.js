@@ -108,3 +108,59 @@ botones.forEach((elemento, clave)=>{
     })
 })
 
+function enviarFormulario() {
+    const form = document.querySelector('#miFormulario');
+    const resultado = document.querySelector('#resultado');
+
+    // Obtener los valores del formulario
+    const nombreform = document.querySelector('#fullname').value;
+    const emailform = document.querySelector('#email').value;
+    const telform = document.querySelector('#tel').value;
+    const localidadform = document.querySelector('#localidad').value;
+    const mensajeform = document.querySelector('#message').value;
+
+    // Enviar los datos mediante Ajax
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'mi-servidor.php');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function() {
+      resultado.innerHTML = xhr.responseText;
+
+      form.reset();
+
+    // Mostrar un mensaje de confirmación o éxito
+    resultado.innerHTML = '<p>El formulario se envió correctamente.</p>';
+    };
+    xhr.send(`fullname=${nombreform}&email=${emailform}&tel=${telform}&localidad=${localidadform}&message=${mensajeform}`);
+  }
+
+  function enviarFormulario() {
+    const form = document.querySelector('#miFormulario');
+    const resultado = document.querySelector('#resultado');
+  
+    // Obtener los valores del formulario
+    const nombreform = document.querySelector('#fullname').value;
+    const emailform = document.querySelector('#email').value;
+    const telform = document.querySelector('#tel').value;
+    const localidadform = document.querySelector('#localidad').value;
+    const mensajeform = document.querySelector('#message').value;
+    
+    // Enviar los datos mediante Ajax
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://jsonplaceholder.typicode.com/posts');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function() {
+     resultado.innerHTML = xhr.responseText;
+  
+     form.reset();
+
+     resultado.innerHTML = '<p>El formulario se envió correctamente.</p>';
+    };
+    xhr.send(JSON.stringify({
+     fullname: nombreform,
+     email: emailform,
+     tel: telform,
+     localidad: localidadform,
+     message: mensajeform
+    }));
+  }
